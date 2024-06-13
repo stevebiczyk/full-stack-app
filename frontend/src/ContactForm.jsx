@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const ContactForm = ({ addContact }) => {
+const ContactForm = ({}) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -16,7 +16,7 @@ const ContactForm = ({ addContact }) => {
       phone,
     };
 
-    const url = "http://localhost:5174/create_contacts";
+    const url = "http://127.0.0.1:5000/create_contact";
     const options = {
       method: "POST",
       headers: {
